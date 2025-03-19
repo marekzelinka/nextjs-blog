@@ -1,4 +1,4 @@
-import { geistMono, geistSans } from "@/fonts";
+import { inter } from "@/fonts";
 import "@/globals.css";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
@@ -14,11 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <body className={`${inter.variable} antialiased`}>{children}</body>
     </html>
   );
 }
